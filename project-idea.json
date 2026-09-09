@@ -1,0 +1,23 @@
+{
+  "project_name": "ai-project-2026-09-05-smart-text-similarity",
+  "title": "Smart Text Similarity Engine",
+  "category": "nlp",
+  "difficulty": "intermediate",
+  "description": "A text similarity engine that combines TF-IDF, cosine similarity, and Jaccard distance to find semantically similar documents. Useful for plagiarism detection, document deduplication, and content recommendation.",
+  "tech_stack": ["scikit-learn", "pandas", "nltk", "numpy", "flask"],
+  "features": [
+    "Multi-algorithm similarity scoring (TF-IDF + Cosine + Jaccard)",
+    "REST API for real-time similarity queries",
+    "Batch CSV processing for document comparison",
+    "Configurable similarity thresholds"
+  ],
+  "estimated_files": 8,
+  "sample_input": {
+    "description": "Two text strings or a CSV file with a 'text' column for batch comparison",
+    "example": "python main.py --text1 \"Machine learning is a subset of AI\" --text2 \"AI includes machine learning as a subfield\"\npython main.py --batch documents.csv --threshold 0.7"
+  },
+  "sample_output": {
+    "description": "Similarity scores between 0.0 and 1.0 with method breakdown",
+    "example": "Similarity Analysis Results:\n  Text 1: Machine learning is a subset of AI\n  Text 2: AI includes machine learning as a subfield\n\n  TF-IDF Cosine:  0.72\n  Jaccard Index:   0.45\n  Combined Score:  0.63\n  Verdict:         SIMILAR"
+  }
+}
