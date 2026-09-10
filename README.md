@@ -1,5 +1,7 @@
 # Smart Text Similarity Engine
 
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 A text similarity engine that combines TF-IDF, cosine similarity, and Jaccard distance to find semantically similar documents. Useful for plagiarism detection, document deduplication, and content recommendation.
 
 **Author:** Maharshi Soni | **License:** MIT
